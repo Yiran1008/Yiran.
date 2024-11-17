@@ -1,0 +1,28 @@
+{
+  "type": "bird-animation",
+  "elements": [
+    {
+      "name": "bird",
+      "type": "icon",
+      "motion": {
+        "path": "circle",
+        "timing": "linear",
+        "duration": "3s",
+        "easing": "easeInOut"
+      },
+      "appearance": {
+        "color": ["#00FF00", "#FFFF00", "#FF0000"],
+        "changeTrigger": "safety-level"
+      }
+    }
+  ],
+  "interaction": {
+    "trigger": "onHover",
+    "response": {
+      "type": "play-animation",
+      "details": {
+        "animation": "wave-wing"
+      }
+    }
+  }
+}
